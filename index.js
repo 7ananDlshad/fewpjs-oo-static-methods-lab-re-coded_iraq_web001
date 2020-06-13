@@ -14,14 +14,14 @@ class Formatter {
     
     words[0] = this.capitalize(words[0]);
     for (let i = 0; i < words.length; i++) {
-      if(accept){
-        
+      if(!except.find(e => e == words[i])){
+         words[i] = this.capitalize(words[i]);
       }
       // if(words[n] !== except){
       // words[i] = this.capitalize(words[i]) ;
     }
     }
-    // return words.join(' ');
-    return words
+    return words.join(' ');
+   // return words
 }
 }
