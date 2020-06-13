@@ -10,6 +10,7 @@ class Formatter {
   
   static titleize(statement){
     let words = string.split(' ');
+    words[0] = this.capitalize(words[0]);
     let except = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from']
     for (let n = 0; n < words.length; n++) {
       if(words[n] !== except){
