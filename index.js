@@ -14,11 +14,9 @@ class Formatter {
     let except = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from']
     for (let n = 0; n < words.length; n++) {
       if(words[n] !== except){
-      words[n] = words[n].charAt(0).toUpperCase() + words[n].slice(1);
+      words[n] = this.capitalize(words[0]);
     }
-      else{
-        words[n] = words[n].slice(0)
-      }
+  
     }
     return words.join(' ');
   }
