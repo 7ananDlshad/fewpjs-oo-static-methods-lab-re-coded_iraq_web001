@@ -16,7 +16,7 @@ class Formatter {
       if(words[n] !== except){
       words[i] = this.capitalize(words[i]);
     }
-  
+  return words
     }
     return words.join(' ');
   }
