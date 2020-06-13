@@ -8,13 +8,13 @@ class Formatter {
     return string.replace(/[^A-Za-z0-9-' ]+/g, '')
   }
   
-  static titleize(statement){
+  static titleize(string){
     let words = string.split(' ');
-    words[0] = this.capitalize(words[0]);
     let except = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from']
+    words[0] = this.capitalize(words[0]);
     for (let i = 0; i < words.length; i++) {
       if(words[n] !== except){
-      words[i] = this.capitalize(words[i]);
+      words[i] = this.capitalize(words[i]) ;
     }
     }
     return words.join(' ');
